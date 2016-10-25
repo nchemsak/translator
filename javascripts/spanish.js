@@ -1,15 +1,14 @@
-
 "use strict";
 
 var Leet = (function(){
 
   var spanish = {
-    Sombody: "Alguien",
-    besides: "además de",
-    Ben: "Ben",
-    please: "por favor",
-    Answer: "responde",
-    the: "a la",
+    Sombody: "Alguien ",
+    besides: "además de ",
+    Ben: "Ben ",
+    please: "por favor ",
+    Answer: "responde ",
+    the: "a la ",
     question: "pregunta"
   };
 
@@ -28,6 +27,9 @@ return {
         break;
     case "german":
         return Leet.getGerman();
+        break;
+    case "canadian":
+        return Leet.getCanadian();
         break;
     default:
         console.log("getTranslation Error");
