@@ -3,12 +3,12 @@
 var Leet = (function(oldLeet) {
 
   var italianLex = {
-    Sombody: "Sombody",
-    besides: "oltre",
-    Ben: "Ben",
-    please: "si prega",
-    Answer: "di rispondere",
-    the: "alla",
+    Sombody: "Sombody ",
+    besides: "oltre ",
+    Ben: "Ben ",
+    please: "si prega ",
+    Answer: "di rispondere ",
+    the: "alla ",
     question: "domanda"
   };
 
