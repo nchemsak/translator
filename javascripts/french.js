@@ -19,5 +19,3 @@ return oldLeet;
 
 
 })(Leet);
-
-console.log(Leet.getTranslation("french"));

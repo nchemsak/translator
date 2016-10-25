@@ -3,7 +3,7 @@
 var Leet = (function(oldLeet) {
 
   var italianLex = {
-    Sombody: "Sombody ",
+    Sombody: "Qualcuno ",
     besides: "oltre ",
     Ben: "Ben ",
     please: "si prega ",
