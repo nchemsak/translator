@@ -2,13 +2,13 @@
 
 var Leet = (function(oldLeet) {
 	var french = {
-		somebody: "quelqu'un",
-		besides: "d'ailleurs",
-		Ben: "Ben",
-		please: "s'il vous plaît",
-		answer: "répondre",
-		the: "la",
-		question: "question"
+		somebody: "quelqu'un ",
+		besides: "d'ailleurs ",
+		Ben: "Ben ",
+		please: "s'il vous plaît ",
+		answer: "répondre ",
+		the: "la ",
+		question: "question "
 	};
 
  oldLeet.getFrench = function () {
