@@ -3,13 +3,13 @@
 var Leet = (function(oldLeet) {
 
   var italianLex = {
-    Sombody: "1",
-    besides: "2",
-    Ben: "3",
-    please: "4",
-    Answer: "5",
-    the: "6",
-    question: "7"
+    Sombody: "Sombody",
+    besides: "oltre",
+    Ben: "Ben",
+    please: "si prega",
+    Answer: "di rispondere",
+    the: "alla",
+    question: "domanda"
   };
 
 oldLeet.getItalian = function() {
