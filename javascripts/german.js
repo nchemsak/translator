@@ -3,13 +3,13 @@
 var Leet = (function(oldLeet){
 
   var germanLex = {
-    Sombody: "Jemand",
-    besides: "neben",
-    Ben: "Ben",
-    please: "bitte",
-    Answer: "Beantworten",
-    the: "Sie die",
-    question: "Frage"
+    Somebody: "Jemand ",
+    besides: "neben ",
+    Ben: "Ben ",
+    please: "bitte ",
+    Answer: "Beantworten ",
+    the: "Sie die ",
+    question: "Frage "
   };
 //Jemand neben Ben bitte Beantworten Sie die Frage
 oldLeet.getGerman = function(){
