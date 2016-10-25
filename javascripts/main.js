@@ -1,43 +1,73 @@
 "use strict";
 
+var outputString = "";
+
 var spanish = document.getElementById("spanish");
 var french = document.getElementById("french");
 var german = document.getElementById("german");
 var italian = document.getElementById("italian");
 var canadian = document.getElementById("canadian");
 var output = document.getElementById("output");
+var inputElement = document.getElementById("input");
 
 function pushPhrase(languageString) {
-  // var obj = Leet.getTranslation();
+  outputString = inputElement.value;
+  console.log("outputString:", outputString);
+  var stringArray = outputString.split(" ");
+  console.log("stringArray:", stringArray);
 
-    // console.log("obj: ", obj );
   if (spanish.selected) {
-    console.log("Spanish");
     var obj = Leet.getTranslation("spanish");
-    output.innerHTML = `${obj.Sombody + obj.besides + obj.Ben + obj.please + obj.Answer + obj.the + obj.question}`
+
+    var newString = outputString.replace(/Somebody/i, obj.Sombody).replace(/besides/i, obj.besides).replace(/Ben/i, obj.Ben).replace(/please/i, obj.please).replace(/answer/i, obj.Answer).replace(/the/i, obj.the).replace(/question/i, obj.question);
+
+    output.innerHTML = newString;
+    console.log("newString:", newString);
+
   } else if (french.selected){
-    console.log("french");
-    var obj2 = Leet.getTranslation("french");
-    output.innerHTML = `${obj2.somebody + obj2.besides + obj2.Ben + obj2.please + obj2.Answer + obj2.the + obj2.question}`
+
+    var obj = Leet.getTranslation("french");
+
+    var newString = outputString.replace(/Somebody/i, obj.somebody).replace(/besides/i, obj.besides).replace(/Ben/i, obj.Ben).replace(/please/i, obj.please).replace(/answer/i, obj.answer).replace(/the/i, obj.the).replace(/question/i, obj.question);
+
+    output.innerHTML = newString;
+    console.log("newString:", newString);
+
   } else if (italian.selected) {
-    console.log("italian");
-    var obj3 = Leet.getTranslation("italian");
-    output.innerHTML = `${obj3.Sombody + obj3.besides + obj3.Ben + obj3.please + obj3.Answer + obj3.the + obj3.question}`
+
+    var obj = Leet.getTranslation("italian");
+
+    var newString = outputString.replace(/Somebody/i, obj.Sombody).replace(/besides/i, obj.besides).replace(/Ben/i, obj.Ben).replace(/please/i, obj.please).replace(/answer/i, obj.Answer).replace(/the/i, obj.the).replace(/question/i, obj.question);
+
+    output.innerHTML = newString;
+    console.log("newString:", newString);
+
   } else if (german.selected) {
-    console.log("german");
-    var obj4 = Leet.getTranslation("german");
-    output.innerHTML = `${obj4.Somebody + obj4.besides + obj4.Ben + obj4.please + obj4.Answer + obj4.the + obj4.question}`
+
+    var obj = Leet.getTranslation("german");
+
+    var newString = outputString.replace(/Somebody/i, obj.Somebody).replace(/besides/i, obj.besides).replace(/Ben/i, obj.Ben).replace(/please/i, obj.please).replace(/answer/i, obj.Answer).replace(/the/i, obj.the).replace(/question/i, obj.question);
+
+    output.innerHTML = newString;
+    console.log("newString:", newString);
+
   } else if (canadian.selected) {
-    console.log("canadian");
-      var obj5 = Leet.getTranslation("canadian");
-    output.innerHTML = `${obj5.Somebody + obj5.besides + obj5.Ben + obj5.please + obj5.answer + obj5.the + obj5.question}`
+
+    var obj = Leet.getTranslation("canadian");
+
+    var newString = outputString.replace(/Somebody/i, obj.Somebody).replace(/besides/i, obj.besides).replace(/Ben/i, obj.Ben).replace(/please/i, obj.please).replace(/answer/i, obj.answer).replace(/the/i, obj.the).replace(/question/i, obj.question);
+
+    output.innerHTML = newString;
+    console.log("newString:", newString);
+
   } else {
     console.log("error");
   }
   }
 
-// button
-document.getElementById("translate").addEventListener("click", pushPhrase);
 
+
+// Event Listeners
+document.getElementById("translate").addEventListener("click", pushPhrase);
 
 
