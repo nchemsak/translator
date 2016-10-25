@@ -1,3 +1,4 @@
+
 "use strict";
 
 var Leet = (function(){
@@ -12,6 +13,7 @@ var Leet = (function(){
     question: "pregunta"
   };
 
+
 return {
   getTranslation: function(id_name) {
     switch(id_name) {
@@ -19,13 +21,13 @@ return {
         return spanish;
         break;
     case "french":
-        return french;
+        return Leet.getFrench();
         break;
     case "italian":
-        return italian;
+        return Leet.getItalian();
         break;
     case "german":
-        return german;
+        return Leet.getGerman();
         break;
     default:
         console.log("getTranslation Error");
@@ -34,6 +36,3 @@ return {
 };
 
 })();
-
-// Testing
-console.log("Return Object By Id", Leet.getTranslation("spanish"));
