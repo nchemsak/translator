@@ -73,3 +73,7 @@ button:hover {
 button:active {
   background-color: tomato;
 }
+
+.pop {
+  color: tomato;
+}
